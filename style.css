@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  h2 {
+    color: #4CAF50;
+  }
+  
+  /* Form Styles */
+  .add-meal form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .add-meal input,
+  .add-meal select,
+  .add-meal button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-meal button {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .add-meal button:hover {
+    background: #45a049;
+  }
+  
+  /* Meal List */
+  .meal-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .meal-list li {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .meal-list button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .meal-list button:hover {
+    background: #e64a19;
+  }
+  
+  /* Progress Bar */
+  .progress-bar-container {
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 20px;
+  }
+  
+  .progress-bar {
+    background: #4CAF50;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s;
+  }
+  

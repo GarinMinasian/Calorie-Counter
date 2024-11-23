@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calorie Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Calorie Counter</h1>
+    <div class="goal">
+      <label for="calorie-goal">Daily Goal:</label>
+      <input type="number" id="calorie-goal" placeholder="2000" />
+    </div>
+  </header>
+  
+  <main>
+    <section class="add-meal">
+      <h2>Add Meal</h2>
+      <form id="meal-form">
+        <input type="text" id="meal-name" placeholder="Meal Name" required />
+        <input type="number" id="calorie-count" placeholder="Calories" required />
+        <select id="meal-category">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="snacks">Snacks</option>
+        </select>
+        <button type="submit">Add Meal</button>
+      </form>
+    </section>
+
+    <section class="meal-list">
+      <h2>Meals</h2>
+      <ul id="meals"></ul>
+    </section>
+
+    <section class="summary">
+      <h2>Daily Summary</h2>
+      <p>Total Calories: <span id="total-calories">0</span></p>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
